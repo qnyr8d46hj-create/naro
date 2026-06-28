@@ -45,28 +45,132 @@ export const hr = {
       },
     ],
   },
-  example: {
-    label: 'Primjer',
+  examples: {
+    label: 'Primjeri',
     headline: 'Ovako izgleda Naro u praksi',
-    story: {
-      intro: 'Ivan želi iznenaditi suprugu za desetu godišnjicu braka.',
-      quote:
-        '"Voli planine, uvijek čita kad nađe minutu i stalno govori da nema vremena za sebe."',
-      scenarioTitle: 'Scenarij koji smo osmislili:',
-      scenarioName: '"DAN SAMO ZA NJU"',
-      timeline: [
-        { time: '08:00', event: 'Buket njezinih omiljenih cvjetova na poslu' },
-        { time: '12:00', event: 'Poruka s tajnom adresom' },
-        { time: '15:00', event: 'Wellness tretman za dvoje' },
-        { time: '20:00', event: 'Privatna večera s pogledom na grad' },
-        {
-          time: 'Kod kuće',
-          event: 'Personalizirana knjiga s njihovim najljepšim uspomenama',
-        },
-      ],
-      result: '"Nije mogla vjerovati da sam se toga sjetio."',
-      note: 'Ovo je jedan od tri scenarija koje bismo predložili. Svaki je potpuno drugačiji.',
-    },
+    subheadline:
+      'Svaki scenarij nastao je iz onoga što ste nam ispričali. Ništa nije slučajno.',
+    contextLabel: 'Što ste nam rekli:',
+    scenarioLabel: 'Scenarij koji smo osmislili:',
+    noteLabel: 'Napomena',
+    note: 'Ovo je jedan od tri scenarija koje bismo predložili. Svaki bi bio potpuno drugačiji.',
+    items: [
+      {
+        badge: '10. godišnjica braka',
+        for: 'Za suprugu',
+        context:
+          '"Voli planine. Uvijek čita kad nađe slobodnu minutu. Stalno govori da nema vremena za sebe — a nikad ne uzima."',
+        scenarioName: '"DAN KOJI JE ZASLUŽILA"',
+        timeline: [
+          {
+            time: '08:00',
+            event:
+              'Poruka na jastuku: "Danas nemaš ni jednog plana. Ni jednog."',
+          },
+          {
+            time: '10:00',
+            event:
+              'Knjiga koju je tri puta stavila u košaricu i uvijek izbrisala — naručena dan ranije',
+          },
+          {
+            time: '12:00',
+            event:
+              'Piknik na Medvednici, na točki gledišta s njezine omiljene fotografije',
+          },
+          {
+            time: '15:30',
+            event: 'Sat masaže — jer nije imala ni jedan slobodan sat u godini',
+          },
+          {
+            time: '19:00',
+            event:
+              'Večera za dvoje, rezerviran stol uz prozor s pogledom na planinu',
+          },
+          {
+            time: 'Kod kuće',
+            event:
+              'Foto knjiga — deset godina u slikama, svaka stranica ručno složena',
+          },
+        ],
+        reaction:
+          '"Nije mi bio ni jedan detalj slučajan. Plakala sam još od prve poruke ujutro."',
+        reactionBy: '— Marta, Zagreb',
+      },
+      {
+        badge: '60. rođendan',
+        for: 'Za mamu',
+        context:
+          '"Obožava vrt. Uvijek peče za cijelu obitelj. Najviše voli kad smo svi zajedno. Ne voli skupe ni pretjerane poklone."',
+        scenarioName: '"UPRAVO ZBOG TEBE"',
+        timeline: [
+          {
+            time: '09:00',
+            event:
+              'Iznenađenje u vrtu — posađene ruže koje godinama planira, a nikad nije stigla',
+          },
+          {
+            time: '12:00',
+            event:
+              'Obiteljski ručak koji svi kuhaju zajedno — po njezinim receptima, za promjenu',
+          },
+          {
+            time: '15:00',
+            event:
+              'Kutija s 60 pisama — svaka osoba koja je voli napisala jedno sjećanje na nju',
+          },
+          {
+            time: '17:30',
+            event:
+              'Torta po njezinom receptu, ispečena od unuke — s malo previše šećera',
+          },
+          {
+            time: 'Posebno',
+            event:
+              'Knjiga obiteljskih recepata — sve što je ikad kuhala, uvezano za svakog člana obitelji',
+          },
+        ],
+        reaction:
+          '"Rekla je da joj je ovo najljepši dar u životu. Nije koštalo puno — koštalo je pažnje."',
+        reactionBy: '— Tomislav, Split',
+      },
+      {
+        badge: '10. rođendan',
+        for: 'Za sina',
+        context:
+          '"Opsjednut je dinosaurima. Obožava istraživati. Uvijek pita pitanja. Sanja da jednog dana postane paleontolog."',
+        scenarioName: '"EKSPEDICIJA ZA BUDUĆEG PALEONTOLOGA"',
+        timeline: [
+          {
+            time: '09:00',
+            event:
+              'Pismo "Hrvatskog paleontološkog instituta" na vratima sobe — poziv na jednodnevnu ekspediciju',
+          },
+          {
+            time: '10:30',
+            event:
+              'Profesionalni set za iskopavanje s pravim fosilima — dio skrivenih u vrtu, dio još nepoznatih',
+          },
+          {
+            time: '13:00',
+            event:
+              'Posjet prirodoslovnom muzeju s privatnim obilazkom dvorane dinosaura',
+          },
+          {
+            time: '15:30',
+            event:
+              'Iskopavanje u parku — skriveni fosili, mape s koordinatama i tajni zadaci',
+          },
+          {
+            time: 'Na kraju',
+            event:
+              'Osobna iskaznica paleontologa s imenom, prvim nalazom i datumom ekspedicije',
+          },
+        ],
+        reaction:
+          '"Tata, ovo je PRAVI posao paleontologa. Kad idemo opet?"',
+        reactionBy: '— Noa, 10 godina, Rijeka',
+      },
+    ],
   },
   whyNaro: {
     label: 'Zašto Naro',
@@ -182,34 +286,39 @@ export const hr = {
   },
   faq: {
     label: 'Česta pitanja',
-    headline: 'Imate pitanja?\nImate ih i svi drugi.',
+    headline: 'Sve što niste\nstigli pitati.',
     items: [
+      {
+        question: 'Kada ću dobiti prijedloge i kako izgledaju?',
+        answer:
+          'Unutar 24 do 48 sati od kada nam pošaljete informacije dobivate email s tri potpuno različita scenarija. Svaki scenarij opisuje tijek dana, konkretne elemente i zašto smo upravo to odabrali za tu osobu — nije to lista linkova, nego priča.',
+      },
       {
         question: 'Što ako mi se ne svidi nijedan od tri prijedloga?',
         answer:
-          'Vraćamo se s alternativama. Naš cilj nije poslati vam tri opcije i završiti posao — naš cilj je pronaći nešto što će osobu zaista ganuti. Ako nismo pogodili, radimo dalje.',
+          'Vraćamo se s alternativama. Naš cilj nije poslati vam tri opcije i označiti posao završenim — naš cilj je pronaći nešto što će osobu zaista ganuti. Ako nismo pogodili, radimo dalje bez dodatne naknade.',
       },
       {
         question: 'Moram li unaprijed znati što osoba voli?',
         answer:
-          'Ne morate imati savršenu listu. Dovoljna su i mala zapažanja — što često govori, čega joj nedostaje, koji film je pogledala deset puta. Mi smo tu da od malih detalja stvorimo veliku priču.',
+          'Ne trebate imati savršenu listu. Dovoljna su i mala, naizgled nevažna zapažanja — što često govori da bi voljela, koji film je pogledala deset puta, čega joj uvijek nedostaje. Mi smo tu upravo zato da od takvih sitnica stvorimo nešto veliko.',
       },
       {
         question: 'Koliko košta vaša usluga i kada plaćam?',
         answer:
-          'Naknada za osmišljavanje i koordinaciju iznosi 49 €, a plaća se tek nakon što odaberete jedan od prijedloga i odlučite krenuti dalje. Budžet za iznenađenje dogovaramo zajedno i njega plaćate direktno.',
+          'Naknada za osmišljavanje i koordinaciju iznosi 49 €, a plaća se tek nakon što odaberete jedan od prijedloga i odlučite krenuti dalje. Ne plaćate ništa unaprijed. Budžet za samo iznenađenje dogovaramo zajedno — vi postavljate granicu, mi je poštujemo.',
       },
       {
-        question: 'Kada ću dobiti prijedloge?',
+        question: 'Možete li organizirati iznenađenje u drugom gradu ili na drugoj adresi?',
         answer:
-          'Unutar 24 do 48 sati od kada nam pošaljete informacije. Ako je datum iznenađenja blizu, kontaktirajte nas direktno na info@naro.hr i pokušat ćemo ubrzati.',
-      },
-      {
-        question: 'Možete li organizirati dostavu na drugu adresu ili u drugi grad?',
-        answer:
-          'Da. Organiziramo iznenađenja diljem Hrvatske — od Dubrovnika do Varaždina. Svaki put dogovaramo logistiku prilagođenu situaciji.',
+          'Da. Organiziramo iznenađenja diljem Hrvatske — od Dubrovnika do Varaždina. Logistiku prilagođavamo svakoj situaciji: dostava na radno mjesto, rezervacija u restoranu koji vi ne znate za njega, koordinacija s trećim osobama. Samo nam recite što trebate.',
       },
     ],
+    cta: {
+      headline: 'Još nešto na umu?',
+      body: 'Pišite nam direktno. Odgovaramo brzo.',
+      link: 'info@naro.hr',
+    },
   },
   footer: {
     tagline: 'Studio za osmišljavanje iznenađenja.',
