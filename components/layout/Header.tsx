@@ -69,10 +69,10 @@ export default function Header({ t }: HeaderProps) {
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           scrolled || menuOpen
-            ? 'bg-naro-cream/98 backdrop-blur-md border-b border-naro-border shadow-sm'
-            : 'bg-transparent'
+            ? 'bg-naro-cream/95 backdrop-blur-xl border-b border-naro-border/80 shadow-[0_1px_12px_rgba(28,23,20,0.06)]'
+            : 'bg-white/80 backdrop-blur-xl border-b border-white/30'
         }`}
       >
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
