@@ -21,7 +21,10 @@ const fadeUp = {
 
 export default function Hero({ t }: HeroProps) {
   const scrollToForm = () => {
-    document.getElementById('forma')?.scrollIntoView({ behavior: 'smooth' })
+    const el = document.getElementById('forma')
+    if (!el) return
+    const top = el.getBoundingClientRect().top + window.scrollY - 80
+    window.scrollTo({ top, behavior: 'smooth' })
   }
 
   const [line1, line2] = t.hero.headline.split('\n')

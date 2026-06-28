@@ -10,6 +10,8 @@ export const hr = {
   nav: {
     logo: 'Naro',
     howItWorks: 'Kako funkcionira',
+    examples: 'Primjeri',
+    faqLink: 'Česta pitanja',
     cta: 'Osmisli iznenađenje',
   },
   hero: {
@@ -17,7 +19,7 @@ export const hr = {
     headline: 'Najljepša iznenađenja\nne kupuju se.',
     headlineAccent: 'Ona se osmišljavaju.',
     subheadline:
-      'Ispričajte nam nešto o osobi koju volite. Mi osmišljavamo tri potpuno personalizirana scenarija iznenađenja — i organiziramo sve do zadnjeg detalja.',
+      'Ispričajte nam nešto o osobi koju volite. Mi osmišljavamo tri personalizirana scenarija iznenađenja i organiziramo sve do zadnjeg detalja.',
     cta: 'Osmisli iznenađenje',
     scrollHint: 'Saznajte više',
   },
@@ -46,129 +48,83 @@ export const hr = {
     ],
   },
   examples: {
-    label: 'Primjeri',
-    headline: 'Ovako izgleda Naro u praksi',
+    label: 'Naro u praksi',
+    headline: 'Od vaših riječi\ndo savršenog trenutka.',
     subheadline:
-      'Svaki scenarij nastao je iz onoga što ste nam ispričali. Ništa nije slučajno.',
-    contextLabel: 'Što ste nam rekli:',
-    scenarioLabel: 'Scenarij koji smo osmislili:',
-    noteLabel: 'Napomena',
+      'Pogledajte kako informacije koje podijelite pretvaramo u potpuno personalizirano iznenađenje.',
+    sectionContext: 'Što ste nam rekli',
+    sectionScenario: 'Scenarij koji smo osmislili',
+    sectionReasons: 'Zašto smo odabrali upravo ovo',
     note: 'Ovo je jedan od tri scenarija koje bismo predložili. Svaki bi bio potpuno drugačiji.',
     items: [
       {
         badge: '10. godišnjica braka',
         for: 'Za suprugu',
-        context:
-          '"Voli planine. Uvijek čita kad nađe slobodnu minutu. Stalno govori da nema vremena za sebe — a nikad ne uzima."',
-        scenarioName: '"DAN KOJI JE ZASLUŽILA"',
-        timeline: [
-          {
-            time: '08:00',
-            event:
-              'Poruka na jastuku: "Danas nemaš ni jednog plana. Ni jednog."',
-          },
-          {
-            time: '10:00',
-            event:
-              'Knjiga koju je tri puta stavila u košaricu i uvijek izbrisala — naručena dan ranije',
-          },
-          {
-            time: '12:00',
-            event:
-              'Piknik na Medvednici, na točki gledišta s njezine omiljene fotografije',
-          },
-          {
-            time: '15:30',
-            event: 'Sat masaže — jer nije imala ni jedan slobodan sat u godini',
-          },
-          {
-            time: '19:00',
-            event:
-              'Večera za dvoje, rezerviran stol uz prozor s pogledom na planinu',
-          },
-          {
-            time: 'Kod kuće',
-            event:
-              'Foto knjiga — deset godina u slikama, svaka stranica ručno složena',
-          },
+        context: [
+          { text: 'Voli ', highlight: false },
+          { text: 'planine', highlight: true },
+          { text: '. Uvijek ', highlight: false },
+          { text: 'čita', highlight: true },
+          { text: ' kad nađe slobodnu minutu. Stalno govori da ', highlight: false },
+          { text: 'nema vremena za sebe', highlight: true },
+          { text: ' — a nikad ne uzima.', highlight: false },
         ],
-        reaction:
-          '"Nije mi bio ni jedan detalj slučajan. Plakala sam još od prve poruke ujutro."',
-        reactionBy: '— Marta, Zagreb',
+        scenarioName: 'DAN KOJI JE ZASLUŽILA',
+        scenario:
+          'Na dan godišnjice poruka na jastuku najavljuje poseban dan — bez planova koje ona mora ispuniti. Kako dan odmiče, stiže knjiga koju je tri puta stavila u košaricu i svaki put izbrisala. Slijedi izlet na njezino najdraže izletište u planinama i ručak u omiljenom restoranu. Poslijepodne donosi ono što si nikad ne uzima – vrijeme samo za sebe, bez obaveza i bez žurbe. Dan završava večerom s pogledom na planinu i fotoknjigom kod kuće — deset zajedničkih godina složenih u slike koje ne trebaju objašnjenje.',
+        reasons: [
+          'Rekli ste da voli planine — osmislili smo dan koji se odvija u prirodi, ne u gradu',
+          'Tri puta je stavila tu knjigu u košaricu i izbrisala — pronašli smo točno nju',
+          'Stalno govori da nema vremena za sebe — poslijepodne je rezervirano samo za odmor',
+          'Deseta godišnjica zaslužuje trajni trag — fotoknjiga ostaje zauvijek',
+        ],
       },
       {
         badge: '60. rođendan',
         for: 'Za mamu',
-        context:
-          '"Obožava vrt. Uvijek peče za cijelu obitelj. Najviše voli kad smo svi zajedno. Ne voli skupe ni pretjerane poklone."',
-        scenarioName: '"UPRAVO ZBOG TEBE"',
-        timeline: [
-          {
-            time: '09:00',
-            event:
-              'Iznenađenje u vrtu — posađene ruže koje godinama planira, a nikad nije stigla',
-          },
-          {
-            time: '12:00',
-            event:
-              'Obiteljski ručak koji svi kuhaju zajedno — po njezinim receptima, za promjenu',
-          },
-          {
-            time: '15:00',
-            event:
-              'Kutija s 60 pisama — svaka osoba koja je voli napisala jedno sjećanje na nju',
-          },
-          {
-            time: '17:30',
-            event:
-              'Torta po njezinom receptu, ispečena od unuke — s malo previše šećera',
-          },
-          {
-            time: 'Posebno',
-            event:
-              'Knjiga obiteljskih recepata — sve što je ikad kuhala, uvezano za svakog člana obitelji',
-          },
+        context: [
+          { text: 'Obožava ', highlight: false },
+          { text: 'vrt', highlight: true },
+          { text: '. Uvijek ', highlight: false },
+          { text: 'peče za cijelu obitelj', highlight: true },
+          { text: '. Najviše voli kad su ', highlight: false },
+          { text: 'svi zajedno', highlight: true },
+          { text: '. Ne voli ', highlight: false },
+          { text: 'skupe ni pretjerane poklone', highlight: true },
+          { text: '.', highlight: false },
         ],
-        reaction:
-          '"Rekla je da joj je ovo najljepši dar u životu. Nije koštalo puno — koštalo je pažnje."',
-        reactionBy: '— Tomislav, Split',
+        scenarioName: 'UPRAVO ZBOG TEBE',
+        scenario:
+          'Umjesto velike geste, osmislili smo dan ispunjen malim, promišljenim trenucima. Jutro počinje u vrtu — njezinom najdražem kutku — gdje je čeka iznenađenje koje se sadi, a ne pakira. Budući da je ona uvijek ta koja kuha za sve, ovaj put obitelj kuha za nju, po njezinim receptima i bez njezinog truda. Skupili smo kratke poruke od svih koji je vole — sjećanja, zahvale, stvari koje se nikad ne kažu naglas. Dan se zatvara tortom koju je ispekla unuka, po bakinom receptu, s malo previše šećera. Kao trajni poklon, svi njezini recepti ispisani su i uvezani u jednu knjigu — za svakog tko je voli.',
+        reasons: [
+          'Rekli ste da ne voli pretjerane poklone — fokusirali smo se na trenutke, ne na stvari',
+          'Obožava vrt — jutarnje iznenađenje postavljeno je upravo tamo',
+          'Uvijek kuha za sve — ovaj put cijeli dan okrenut je prema njoj',
+          'Najviše voli kad su svi zajedno — scenarij je izgrađen oko obitelji, ne oko poklona',
+        ],
       },
       {
         badge: '10. rođendan',
         for: 'Za sina',
-        context:
-          '"Opsjednut je dinosaurima. Obožava istraživati. Uvijek pita pitanja. Sanja da jednog dana postane paleontolog."',
-        scenarioName: '"EKSPEDICIJA ZA BUDUĆEG PALEONTOLOGA"',
-        timeline: [
-          {
-            time: '09:00',
-            event:
-              'Pismo "Hrvatskog paleontološkog instituta" na vratima sobe — poziv na jednodnevnu ekspediciju',
-          },
-          {
-            time: '10:30',
-            event:
-              'Profesionalni set za iskopavanje s pravim fosilima — dio skrivenih u vrtu, dio još nepoznatih',
-          },
-          {
-            time: '13:00',
-            event:
-              'Posjet prirodoslovnom muzeju s privatnim obilazkom dvorane dinosaura',
-          },
-          {
-            time: '15:30',
-            event:
-              'Iskopavanje u parku — skriveni fosili, mape s koordinatama i tajni zadaci',
-          },
-          {
-            time: 'Na kraju',
-            event:
-              'Osobna iskaznica paleontologa s imenom, prvim nalazom i datumom ekspedicije',
-          },
+        context: [
+          { text: 'Opsjednut je ', highlight: false },
+          { text: 'dinosaurima', highlight: true },
+          { text: '. Obožava ', highlight: false },
+          { text: 'istraživati', highlight: true },
+          { text: '. Uvijek ', highlight: false },
+          { text: 'pita pitanja', highlight: true },
+          { text: '. Sanja da jednog dana postane ', highlight: false },
+          { text: 'paleontolog', highlight: true },
+          { text: '.', highlight: false },
         ],
-        reaction:
-          '"Tata, ovo je PRAVI posao paleontologa. Kad idemo opet?"',
-        reactionBy: '— Noa, 10 godina, Rijeka',
+        scenarioName: 'EKSPEDICIJA ZA BUDUĆEG PALEONTOLOGA',
+        scenario:
+          'Dan ne počinje čestitkom — počinje pismom. Pismo od "Paleontološkog instituta" pronalazi ga na vratima sobe i sadržava misiju za taj dan: jednodnevna terenska ekspedicija. Od tog trenutka sve se odvija kao prava istraga: profesionalni set za iskopavanje, fosili skriveni u vrtu koji čekaju da ih pronađe, posjet prirodoslovnom muzeju i razgovor s kustosom koji zna odgovoriti na svako pitanje. Dan ne završava samo tortom — završava osobnom iskaznicom paleontologa s njegovim imenom, datumom prve ekspedicije i opisom prvog nalaza tog dana.',
+        reasons: [
+          'Opsjednut je dinosaurima — cijeli dan osmišljavali smo kao pravu paleontološku ekspediciju',
+          'Voli istraživati i uvijek pita pitanja — svaki element dana je nova misterija za otkriti',
+          'Sanja postati paleontolog — završetak dana je iskaznica s njegovim imenom i prvim nalazom',
+        ],
       },
     ],
   },

@@ -81,7 +81,7 @@ export default function FAQ({ t }: FAQProps) {
   const [line1, line2] = headline.split('\n')
 
   return (
-    <section className="py-28 md:py-36 px-6 bg-white">
+    <section id="cesta-pitanja" className="py-28 md:py-36 px-6 bg-white">
       <div className="max-w-3xl mx-auto">
         {/* Header */}
         <motion.div
